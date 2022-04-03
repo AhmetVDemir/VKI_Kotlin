@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Body Mass Index</string>
+    <string name="app_title">VKI</string>
+    <string name="height_value_txt">Boy(Cm)</string>
+    <string name="weight_value_txt">KG</string>
+    <string name="run_btn_txt">Hesapla</string>
+
+
+</resources>

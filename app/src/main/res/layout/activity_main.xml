@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="49dp"
+        android:text="@string/app_title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtBoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="@string/height_value_txt"
+        android:inputType="number"
+        android:textColorHint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/txtKilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Baslik"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/weight_value_txt"
+        android:inputType="number"
+        android:textColorHint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/txtSonuc"
+        app:layout_constraintStart_toStartOf="@+id/txtBoy"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoy"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:maxLines="5"
+        android:minLines="1"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnHesapla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKilo" />
+
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="Hesapla"
+        android:text="@string/run_btn_txt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtSonuc"
+        app:layout_constraintTop_toBottomOf="@+id/txtSonuc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
